@@ -1,6 +1,6 @@
 # 🏦 HDFC Mutual Fund FAQ Chatbot
 
-🚀 **Live App:** https://hdfc-bot.streamlit.app
+🚀 **Live App:** https://hdfc-faq-bot.streamlit.app/
 
 This is a RAG-based chatbot that answers HDFC Mutual Fund FAQs.
 
