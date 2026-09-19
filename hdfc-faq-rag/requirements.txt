@@ -1,0 +1,13 @@
+requests==2.32.3
+beautifulsoup4==4.12.3
+lxml==5.2.2
+
+# Phase 3 - Embedding
+sentence-transformers==3.0.1
+numpy==1.26.4
+
+# Phase 4 - Vector Store
+chromadb==0.5.5
+
+# Fallback for later if Groww requires JS rendering (uncomment if needed):
+# playwright==1.45.0
