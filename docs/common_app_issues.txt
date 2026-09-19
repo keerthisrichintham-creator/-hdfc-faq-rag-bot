@@ -1,0 +1,59 @@
+HDFC MFOnline App — Common Issues Knowledge Base
+Source: hdfc_mfonline_reviews.xlsx (Play Store reviews, compiled from LIP5 App Review Insighter)
+
+Q: OTP not received / OTP failed
+A: Please check DND settings, wait at least 120 seconds, and check SMS spam/blocked messages. Try "Resend via Voice Call" if SMS OTP doesn't arrive. Account auto-unlocks after 30 minutes if temporarily blocked due to OTP retries.
+
+Q: OTP takes very long to arrive or never comes at all
+A: This is usually a telecom delivery delay, not an app issue. Wait 2-3 minutes before retrying. If it still doesn't arrive, use the Voice Call OTP option or try after switching from WiFi to mobile data (SMS delivery can be affected by network type).
+
+Q: Stuck in a logout-login loop with "network error" and OTP not received
+A: This loop is typically caused by an unstable internet connection interrupting the OTP request mid-way. Switch networks (WiFi <-> mobile data), force-close the app, clear cache, and log in again. Avoid tapping "resend" repeatedly, as this can trigger a temporary block.
+
+Q: Session expires within a minute of logging in / app logs out automatically
+A: Clear app cache, update to the latest app version, allow all requested app permissions, and avoid using a VPN. Persistent session drops are often caused by battery-optimization settings killing the app in the background — disable battery optimization for the app.
+
+Q: App auto-logs out every few minutes, has to re-enter OTP repeatedly
+A: This is related to session timeout settings. Check that the phone's date & time are set to "automatic" (network-provided), since incorrect device time can cause repeated session invalidation. Also try disabling any app-locking or memory-cleaner utilities running in the background.
+
+Q: Account blocked after 3 wrong attempts
+A: This is a security lockout, not a technical fault. Wait 30 minutes for auto-unlock, or contact the registrar (CAMS/KFintech) with your PAN for immediate assistance.
+
+Q: NAV not updated even after 2 days / shows old NAV date
+A: NAV updates typically take T+1 day to reflect after a transaction or market close. If it's been longer, force-refresh the portfolio screen or log out and back in; NAV sync issues usually resolve within 24-48 hours.
+
+Q: NAV/units not showing anywhere after the latest update / portfolio screen blank
+A: This is a known display issue after app updates. Update to the latest app version from the store, clear cache, and reinstall if the screen is still blank — this refreshes the local data cache that sometimes fails to rebuild after an update.
+
+Q: NAV date missing on the holdings page
+A: This is a UI display gap, not a data issue — the underlying NAV is current even if the date label isn't shown. Cross-check the actual NAV value against the fund house website if you need to confirm currency of data.
+
+Q: XIRR per scheme has disappeared since the redesign (only overall XIRR shown)
+A: Per-scheme XIRR was removed in the recent redesign. As a workaround, use the "Portfolio Analysis" or "Reports" section to view scheme-level returns, or check the individual scheme statement. This has been logged as a feature-regression request.
+
+Q: Portfolio value is rounded off / want exact rupees and paise
+A: The dashboard shows a rounded summary by default. Tap into the individual scheme/holding view for the exact value with decimals, or generate a portfolio statement, which always shows figures to the paisa.
+
+Q: Monthly/capital gain statement generation fails
+A: Statement generation can fail due to a large date range or high transaction volume. Try narrowing the date range, ensure a stable network connection, and retry during non-peak hours (avoid month-start/month-end when server load is high).
+
+Q: Capital gain statement download button does nothing when tapped
+A: This usually means the file generated but the download didn't trigger — check your device's Downloads folder or app storage permission. Ensure storage permission is granted to the app, then retry.
+
+Q: Statement password not working (tried PAN and DOB)
+A: The default password format is usually the first 4 letters of your name (capital) + PAN's first 5 characters + date of birth (DDMMYYYY) or PAN + DOB depending on document type — this varies by statement type, so check the password hint shown on the email/statement itself. If it still fails, regenerate the statement, as password hints occasionally get mismatched to an older file.
+
+Q: Payment failed message shown but amount was debited from my bank
+A: This happens when the bank confirms the debit but the response doesn't reach MFOnline in time. The amount is auto-reversed to your bank account within 5-7 business days if the transaction wasn't completed. Check "Transaction Status" before retrying payment to avoid a duplicate debit.
+
+Q: SIP amount deducted but not showing in app
+A: SIP debits take up to T+1 day to reflect in the app after the bank confirms the deduction. Check again after 24 hours under Transaction Status; if it still doesn't appear, the units will still be allotted at the applicable NAV even if the app display is delayed.
+
+Q: SIP amount deducted twice in a month, app shows only one transaction
+A: This is usually a display limitation showing only the latest transaction, not an actual double-charge — check your bank statement and the "Transaction History" (not just the summary view) for both entries. If a genuine duplicate debit is confirmed, raise it with the registrar for reversal.
+
+Q: Redemption request stuck / pending for more than 3 days with no status update
+A: Redemptions typically settle in T+1 to T+3 working days depending on the fund type (equity vs. debt vs. liquid). If it's pending beyond that window, check "Transaction Status" for a rejection reason (e.g., bank mandate mismatch) — if none is shown, contact the registrar with the transaction reference number.
+
+Q: App is very slow / takes 30 seconds to open holdings, or internal server error opening portfolio
+A: This is generally a server-load or local-cache issue. Update to the latest app version, clear cache, and retry during off-peak hours. If the internal server error persists across retries, it indicates a backend outage — check the official HDFC MFOnline status page or Twitter/X support handle for known outages.
