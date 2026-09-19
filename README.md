@@ -1,6 +1,8 @@
-# HDFC Mutual Fund FAQ Assistant - Groww Challenge
+# 🏦 HDFC Mutual Fund FAQ Chatbot
 
-**Live Bot:** https://keerthisrichintham-creator--hdfc-faq-rag-bot-app-zvkc3n.streamlit.app/
+🚀 **Live App:** https://hdfc-bot.streamlit.app
+
+This is a RAG-based chatbot that answers HDFC Mutual Fund FAQs.
 
 **Scope:** HDFC AMC - 5 schemes (Large, Flexi, ELSS, Mid, Small Cap Direct Growth)
 
